@@ -100,6 +100,10 @@ footer {
 .main__cross {
   margin-left: auto;
   transition: all 0.5s ease 0s;
+  opacity: 0;
+}
+.main:hover .main__cross {
+  opacity: 1;
 }
 
 .main__title-outer:hover ~ .main__meme-outer,
