@@ -77,7 +77,6 @@ footer {
 }
 
 .main__item {
-  margin-bottom: 1rem;
 }
 .main__input {
   padding: 0;
@@ -99,7 +98,7 @@ footer {
 }
 .main__cross {
   margin-left: auto;
-  transition: all 0.5s ease 0s;
+  transition: all 0.8s ease 0s;
   opacity: 0;
 }
 .main:hover .main__cross {
@@ -121,7 +120,7 @@ footer {
   width: 0%;
   margin: 0 auto;
   max-width: 700px;
-  transition: all 0.5s ease-out 0s;
+  transition: all 0.8s ease-out 0s;
 }
 
 .main__meme {
