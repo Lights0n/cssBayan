@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  font-family: Rubik;
+  height: 100%;
+  line-height: 1;
+  font-size: 100%;
+  color: #616161;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+/*end of starting*/
+header,
+main,
+footer {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.wrapper {
+}
+
+.header {
+  padding: 2rem 0;
+}
+
+.header__body {
+}
+
+.header__title {
+  font-size: 2rem;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.main__list {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main__item {
+}
+.main__input {
+  display: none;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  height: 0;
+}
+.main__input:checked ~ .main__meme-outer {
+  height: 100%;
+  width: 100%;
+}
+
+.main__title-outer {
+  display: flex;
+  justify-content: space-between;
+}
+.main__meme-title {
+  padding: 0.5rem 0;
+  font-size: 1.6rem;
+}
+.main__cross {
+  margin-left: auto;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+}
+.main:hover .main__cross {
+  opacity: 1;
+}
+
+.main__title-outer:hover ~ .main__meme-outer,
+.main__meme-outer:hover {
+  height: 100%;
+  width: 100%;
+}
+
+.main__title-outer:hover .main__cross {
+  transform: rotate(45deg);
+}
+
+.main__meme-outer {
+  height: 0%;
+  width: 0%;
+  margin: 0 auto;
+  max-width: 43.75rem;
+  transition: all 0.8s ease-out 0s;
+}
+
+.main__meme {
+  width: inherit;
+}
+
+.footer {
+}
+
+.footer__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer__school {
+}
+
+.footer__year {
+  font-size: 1.2rem;
+}
+
+.footer__git {
+}
+
+@media (max-width: 1023.98px) {
+  .header__title {
+    font-size: 1.8rem;
+  }
+  .main__meme-title {
+    font-size: 1.4rem;
+  }
+  .footer__year {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 424.98px) {
+  .header__title {
+    font-size: 1.5rem;
+  }
+  .main__meme-title {
+    font-size: 1.2rem;
+  }
+  .footer__year {
+    font-size: 0.8rem;
+  }
+}
